@@ -7,6 +7,9 @@
 const myName = "Emily";
 let myFavoriteColor = "Purple";
 
+export const getFish = () => {
+    return fishCollection
+}
 const fishCollection = [
     {
         name: "Bart",
