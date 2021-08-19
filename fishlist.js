@@ -9,11 +9,14 @@ import { Fish } from "./fish.js"
 export const FishList = () => {
 
     // Get a reference to the `<section class="fishList">` element
-    const contentElement = document.querySelector("insert selector here")
-    const fishes = getFish()
+    const contentElement = document.querySelector(".fishlist")
+    
+    const allFishes = getFish()
 
     // Add to the existing HTML in the content element
-    contentElement.innerHTML += `
-        All the fish go here!
-    `
+    let fishHTMLRepresentation = "";
+    for (const oneThingFromTheSea of allFishes)
+    fishHTMLRepresentation = Fish(oneThingFromTheSea);
 }
+
+    contentElement.innerHTML += `${fishHTMLRepresentation} `
