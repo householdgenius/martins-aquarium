@@ -5,6 +5,6 @@ export const getLocation = () => {
 const Location = [
 {
     country: "Canada",
-    Climate: "warm"
+    climate: "warm"
 }
 ]
