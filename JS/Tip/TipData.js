@@ -4,7 +4,7 @@ export const getTips = () => {
 };
 
 const tipCollection = [
-    "fish tip 1",
-    "fish tip 2",
-    "fish tip 3"
+    "fish are friends, not food",
+    "feed twice daily",
+    "adjust the salinity to the fish's liking"
 ];

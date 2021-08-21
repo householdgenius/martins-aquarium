@@ -44,7 +44,7 @@ const fishCollection = [
     {
         name: "Nemo",
         food: "Goldfish",
-        image: "blue.jpg",
+        image: "nemo.jpg",
         species: "Clown",
         length: 3,
         waterType: "Salt-water",
@@ -81,7 +81,7 @@ const fishCollection = [
     {
         name: "Bloat",
         food: "shrimp",
-        image: "yellow.jpg",
+        image: "bloat.jpg",
         species: "Blow Fish",
         length: 5,
         waterType: "Salt",
@@ -97,3 +97,31 @@ const fishCollection = [
         harvestLocation: "Asia"
     }
 ]
+export const getMostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    const holyFishArray = []
+
+    for (const length of holyFishArray ) {
+        if (length === 3,6,9,12)
+        holyFishArray.push(length)
+    }
+
+    return holyFishArray
+}
+
+export const getSoldierFish = () => {
+    // 5, 10, 15, 20, 25, etc... fish
+    
+    for (const length of holyFishArray ) {
+        if (length === 5,10,15,130)
+        holyFishArray.push(length)
+    }
+    return soldiersArray
+}
+
+export const getUnworthy = () => {
+    // Any fish not a multiple of 3 or 5
+    
+   
+    return unworthyArray
+}
