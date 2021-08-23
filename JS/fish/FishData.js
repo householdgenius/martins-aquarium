@@ -10,14 +10,16 @@ let myFavoriteColor = "Purple";
 export const getFish = () => {
     return fishCollection
 }
+
 const fishCollection = [
+
     {
         name: "Bart",
         food: "crustaceans",
         image: "blue.jpg",
         species: "trigger",
         length: 7,
-        waterType: "salt", 
+        waterType: "salt",
         harvestLocation: "Costa Rica"
 
     },
@@ -27,7 +29,7 @@ const fishCollection = [
         image: "red.jpg",
         species: "tang",
         length: 3,
-        waterType: "salt", 
+        waterType: "salt",
         harvestLocation: "Florida"
 
     },
@@ -37,7 +39,7 @@ const fishCollection = [
         image: "yellow.jpg",
         species: "Siamese algae eater",
         length: 5,
-        waterType: "salt", 
+        waterType: "salt",
         harvestLocation: "Puerto Rico"
 
     },
@@ -97,15 +99,38 @@ const fishCollection = [
         harvestLocation: "Asia"
     }
 ]
+
 export const getMostHolyFish = () => {
     // 3, 6, 9, 12, etc... fish
-    // const fishCollection = [7,3,5,3,9,2,130,5,3]
     const holyFishArray = []
-    for (const object of fishCollection) 
-        if (object.length % 3 === 0) {
-            holyFishArray.push(object.length)
+
+    for (const fish of fishCollection) {
+        if (fish.length % 3 === 0) {
+            holyFishArray.push(fish)
+        }
     }
 
     return holyFishArray
+}
+export const getSoldierFish = () => {
+    // 5, 10, 15, 20, 25, etc... fish
+    const soldiersArray = [];
+    for (const fish of fishCollection) {
+        if (fish.length % 5 === 0)
+            soldiersArray.push(fish);
     }
-   
+    return soldiersArray
+}
+
+export const getUnworthy = () => {
+    // Any fish not a multiple of 3 or 5
+    const unworthyArray = [];
+    for (const fish of fishCollection) {
+        if (fish.length % 3 !== 0 && fish.length % 5 !== 0) {
+            unworthyArray.push(fish);
+        }
+
+
+    }
+    return unworthyArray
+}

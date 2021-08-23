@@ -6,4 +6,4 @@ export const Location = (Location) => {
                     <li class="location"> Climate: ${Location.climate}</li>
 				</ul>
          </article>`
-                     }
+}
