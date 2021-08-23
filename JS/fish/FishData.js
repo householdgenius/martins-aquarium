@@ -99,29 +99,13 @@ const fishCollection = [
 ]
 export const getMostHolyFish = () => {
     // 3, 6, 9, 12, etc... fish
+    // const fishCollection = [7,3,5,3,9,2,130,5,3]
     const holyFishArray = []
-
-    for (const length of holyFishArray ) {
-        if (length === 3,6,9,12)
-        holyFishArray.push(length)
+    for (const object of fishCollection) 
+        if (object.length % 3 === 0) {
+            holyFishArray.push(object.length)
     }
 
     return holyFishArray
-}
-
-export const getSoldierFish = () => {
-    // 5, 10, 15, 20, 25, etc... fish
-    
-    for (const length of holyFishArray ) {
-        if (length === 5,10,15,130)
-        holyFishArray.push(length)
     }
-    return soldiersArray
-}
-
-export const getUnworthy = () => {
-    // Any fish not a multiple of 3 or 5
-    
    
-    return unworthyArray
-}
